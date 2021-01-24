@@ -72,7 +72,7 @@ result = (path("recent")
            | download
            | unzip(password=config.get("password"))
            | concat
-           | p_map(parse_csv(delimiter="|"))
+           | map(parse_csv(delimiter="|"))
            | filter(
                get("CREATED ON") 
                | capitalize
