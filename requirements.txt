@@ -1,3 +1,1 @@
 paramiko
-sqlalchemy
-boto3
