@@ -82,4 +82,4 @@ result = (path("recent")
 ```
 
 
-There is still a lot to be done. Pull requests or feature requests are welcomed.
+There is still a lot to be done. Pull requests or feature requests are welcome.
