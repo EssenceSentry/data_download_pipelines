@@ -2,7 +2,7 @@
 
 A set of utilities for declarative specification of data download pipelines for ETL jobs. Great care was taken not to add external dependencies (it only requires `paramiko` to manage SSH connections).
 
-At the moment, these utilities are focused on retrieving data from FTP servers or from remote machines using SSH or URLs without authentication.
+At the moment, these utilities are focused on retrieving data from FTP servers, from remote machines using SSH or files downloaded from URLs.
 
 ### A few examples
 
