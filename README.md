@@ -1,6 +1,6 @@
 # Data download pipelines
 
-A set of utilities for declarative specify data download pipelines for ETL jobs.
+A set of utilities for declarative specification of data download pipelines for ETL jobs.
 
 At the moment, these utilities are focused on retrieving data from FTP servers or from remote machines using SSH. 
 It is also possible to download files from a URL without authentication.
