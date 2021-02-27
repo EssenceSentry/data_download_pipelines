@@ -19,20 +19,18 @@ def download(filename, connection=None):
         return connection.download(filename)
     elif connection is None:
         return helper_utils.url_download(filename)
-    else:
-        raise ValueError(
-            "Connection must be an instance of 'FTPConnection', 'SSHConnection' or 'None'. %s was given."
-            % type(connection))
+    raise ValueError(
+        "Connection must be an instance of 'FTPConnection', 'SSHConnection' or 'None'. %s was given."
+        % type(connection))
 
 
 @Pipe
 def contents(filename, connection):
     if isinstance(connection, (FTPConnection, SSHConnection)):
         return connection.contents(filename)
-    else:
-        raise ValueError(
-            "Connection must be an instance of 'FTPConnection' or 'SSHConnection'. %s was given."
-            % type(connection))
+    raise ValueError(
+        "Connection must be an instance of 'FTPConnection' or 'SSHConnection'. %s was given."
+        % type(connection))
 
 
 @Pipe
