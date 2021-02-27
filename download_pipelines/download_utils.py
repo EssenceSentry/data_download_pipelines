@@ -17,7 +17,7 @@ logging.getLogger("xml_utils").setLevel(logging.WARNING)
 def download(filename, connection=None):
     if isinstance(connection, (FTPConnection, SSHConnection)):
         return connection.download(filename)
-    elif connection is None:
+    if connection is None:
         return helper_utils.url_download(filename)
     raise ValueError(
         "Connection must be an instance of 'FTPConnection', 'SSHConnection' or 'None'. %s was given."
