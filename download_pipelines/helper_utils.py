@@ -25,8 +25,7 @@ class Str(str):
               maxsplit: Optional[int] = None):
         if isinstance(maxsplit, int):
             return [Str(elem) for elem in re.split(sep, self, maxsplit)]
-        else:
-            return [Str(elem) for elem in re.split(sep, self)]
+        return [Str(elem) for elem in re.split(sep, self)]
 
     def lstrip(self, regex: Optional[str] = r"\W+"):
         split = self.split(f"({regex})")
